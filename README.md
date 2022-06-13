@@ -20,7 +20,8 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### How to Run 
+* publically hosted [here](https://kramer-bu-vue-comic-strip.netlify.app/) OR:
 ```
 npm run serve
 ```
