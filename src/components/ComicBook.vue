@@ -1,24 +1,32 @@
 <template>
   <body>
+  <div class="strip">
     <h1>Peanuts comic strip paintings from the 50's</h1>
     <h2>4 panels of Linus</h2>
     <h3>Painting's by <cite>
       <a href="https://www.etsy.com/listing/63492282/peanuts-comic-strip-paintings-from-the" target="_blank">Walter Yablonsky</a>
     </cite></h3>
     <h4>Original strip by <cite>Charles Schulz</cite></h4>
+      <div>
+        <figure>
+       <img @mouseover="changeImage" :src="current">
+          <figcaption>Hover over each image to cycle through all four images in this series</figcaption>
+        </figure>
+      </div>
+  </div>
+  <div class="strip">
+    <h1>Curtis by Ray Billingsley</h1>
+    <h2>This strip was written during the COVID-19 shutdown</h2>
+      <div class="container">
+        <img class="item1" v-show="c1" :src="cFirst">
+        <img class="item2" v-show="c2" :src="cSecond">
+        <img class="item3" v-show="c3" :src="cThird">
+        <img class="item4" v-show="c4" :src="cFourth">
+      </div>
     <div>
-      <figure>
-     <img @mouseover="changeImage" :src="current">
-        <figcaption>Hover over each image to cycle through all four images in this series</figcaption>
-      </figure>
-   </div>
-    <div class="container">
-      <input id="curtis-controller" type="submit" value="Start Curtis Slideshow" @click="slideShow">
-      <img class="item1" v-show="c1" :src="cFirst">
-      <img class="item2" v-show="c2" :src="cSecond">
-      <img class="item3" v-show="c3" :src="cThird">
-      <img class="item4" v-show="c4" :src="cFourth">
+      <input id="curtis-controller" type="button" value="Start Curtis Slideshow" @click="slideShow">
     </div>
+  </div>
   </body>
 </template>
 
