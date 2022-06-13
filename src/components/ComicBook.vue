@@ -74,7 +74,7 @@ export default {
       }
     },
     slideShow(){
-      document.getElementById('curtis-controller').value = "next slide";
+      document.getElementById('curtis-controller').value = "next frame";
       if (this.cCurrent === null) {
         this.cCurrent = this.cFirst;
         this.c1 = true; // show c1
