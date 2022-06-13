@@ -1,0 +1,39 @@
+* {
+    font-family: Verdana, sans-serif, "system-ui";
+}
+
+body {
+    background: linear-gradient(-45deg, lightgrey, darkgrey, grey, dimgray);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item1 {
+    grid-column: 1;
+}
+.item2 {
+    grid-column: 2;
+}
+.item3 {
+    grid-column: 3;
+}
+.item4 {
+    grid-column: 4;
+}

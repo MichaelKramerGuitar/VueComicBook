@@ -21,3 +21,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Boston University Project Requirements
+metcs601_assignment6.pdf
